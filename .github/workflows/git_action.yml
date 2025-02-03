@@ -1,0 +1,15 @@
+name: Git-Action
+
+on : push
+
+jobs:
+  git-action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: anupama.deo@gramene.com
+        run: | #python
+          import json
+          file = json.loads('index.json')
+          print(file['email'])
+        
+    
