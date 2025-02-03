@@ -9,7 +9,7 @@ jobs:
       - name: anupama.deo@gramene.com
         run: | #python
           import json
-          file = json.loads('index.json')
+          file = json.loads('email.json')
           print(file['email'])
         
     
