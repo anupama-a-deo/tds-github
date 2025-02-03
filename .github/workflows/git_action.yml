@@ -6,10 +6,11 @@ jobs:
   git-action:
     runs-on: ubuntu-latest
     steps:
-      - name: anupama.deo@gramene.com
+      - name: anupama.deo@gramener.com
         run: | #python
           import json
-          file = json.loads('email.json')
+          with open('email.json') as f:
+            file = json.loads(f)
           print(file['email'])
         
     
